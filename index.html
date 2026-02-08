@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도노톡 다운로드</title>
+</head>
+<body>
+    <script>
+        const ua = navigator.userAgent;
+        if (/iPad|iPhone|iPod/.test(ua)) {
+            window.location.href = 'https://apps.apple.com/kr/app/%EB%8F%84%EB%85%B8%ED%86%A1/id6503676068';
+        } else if (/Android/.test(ua)) {
+            window.location.href = 'https://play.google.com/store/apps/details?id=com.hayol.donoapp&hl=ko&pli=1';
+        } else {
+            document.body.innerHTML = '<div style="text-align: center; padding: 50px;"><h1>도노톡</h1><a href="https://apps.apple.com/kr/app/%EB%8F%84%EB%85%B8%ED%86%A1/id6503676068">📱 App Store</a><br><a href="https://play.google.com/store/apps/details?id=com.hayol.donoapp&hl=ko&pli=1">🤖 Google Play</a></div>';
+        }
+    </script>
+</body>
+</html>
